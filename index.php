@@ -8,13 +8,12 @@ require_once('config/config.php');
 // Initiate core MVC object
 $mvc = new MVC\Core();
 
-// Catalog routes
+/* Example routes
 $mvc->router->addRoute("/(catalog)", array("controller"), "GET");
 $mvc->router->addRoute("/(catalog)/(view)/([0-9]{1,6})", array("controller", "action", "id"), "GET");
-
-// Categories routes
 $mvc->router->addRoute("/(categories)/(view)/(all)/([0-9]{1,6})", array("controller", "action", "id", "page"), "GET");
 $mvc->router->addRoute("/(categories)/(view)/([0-9]{1,6})/([0-9]{1,6})", array("controller", "action", "id", "page"), "GET");
+*/
 
 // Page route
 $mvc->router->addRoute("/(.*)", array("page"), "GET");
